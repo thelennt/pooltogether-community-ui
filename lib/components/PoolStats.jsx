@@ -20,7 +20,7 @@ import { displayPercentage } from 'lib/utils/displayPercentage'
 import { shorten } from 'lib/utils/shorten'
 import { formatYieldSourceName, formatYieldSourceImage } from 'lib/utils/yieldSourceFormatters'
 
-import PoolSvg from 'assets/images/pool-icon.svg'
+import MithrilIcon from 'assets/images/mithrilicon.png'
 
 const PoolStatsCardLayout = (props) => {
   return (
@@ -375,7 +375,7 @@ const DailyPoolDistributionStat = (props) => {
       title={`Daily ${poolChainValues.tokenFaucet.dripToken.symbol} distribution`}
       tokenSymbol={poolChainValues.tokenFaucet.dripToken.symbol}
       tokenAmount={poolChainValues.tokenFaucet.dripRatePerDay}
-      tokenImage={isPool && PoolSvg}
+      tokenImage={isPool && MithrilIcon}
     />
   )
 }

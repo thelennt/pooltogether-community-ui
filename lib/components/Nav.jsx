@@ -5,8 +5,8 @@ import { ConnectWalletButton } from 'lib/components/ConnectWalletButton'
 import { WalletInfo } from 'lib/components/WalletInfo'
 import { useWalletNetwork } from 'lib/hooks/useWalletNetwork'
 
-import PoolLogo from 'assets/images/pooltogether-logo.svg'
-import PoolPLogo from 'assets/images/pooltogether-white-mark.svg'
+import MithrilLogo from 'assets/images/mithril-logo.svg'
+import MithrilPLogo from 'assets/images/mithril-logo.svg'
 
 export const Nav = (props) => {
   const { walletConnected } = useWalletNetwork()
@@ -19,13 +19,13 @@ export const Nav = (props) => {
             <Link href='/' as='/'>
               <a title={'Back to home'} className='border-0'>
                 <img
-                  alt={`PoolTogether Logo`}
-                  src={PoolLogo}
+                  alt={`Mithril Logo`}
+                  src={MithrilLogo}
                   className='mr-auto lg:m-0 w-32 hidden sm:block'
                 />
                 <img
-                  alt={`PoolTogether P Logo`}
-                  src={PoolPLogo}
+                  alt={`Mithril P Logo`}
+                  src={MithrilPLogo}
                   className='mr-auto lg:m-0 w-6 block sm:hidden'
                 />
               </a>

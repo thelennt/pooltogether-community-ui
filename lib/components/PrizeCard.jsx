@@ -11,7 +11,7 @@ import { useCoingeckoTokenData } from 'lib/hooks/useCoingeckoTokenData'
 import { useAwardsList } from 'lib/hooks/useAwardsList'
 import { usePoolChainValues } from 'lib/hooks/usePoolChainValues'
 
-import Cactus from 'assets/images/cactus.svg'
+import Sam from 'assets/images/Sam.svg'
 
 export const PrizeCard = (props) => {
   const { showLinks, className } = props
@@ -80,8 +80,8 @@ const PrizeSection = (props) => {
         </CardSecondaryTitle>
         <CardSecondaryTitle className='text-center mb-8'>Check back on us soon!</CardSecondaryTitle>
         <img
-          alt='image of a cactus'
-          src={Cactus}
+          alt=''
+          src={Sam}
           className='mx-auto w-12 h-12 sm:w-32 sm:h-32 mb-4 sm:mb-8'
         />
       </>
