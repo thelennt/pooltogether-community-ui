@@ -64,7 +64,7 @@ export const WalletInfo = () => {
           className={classnames(
             'text-lightPurple-500 hover:text-white trans ml-2 outline-none focus:outline-none',
             'block border rounded-full w-4 h-4 text-center text-lg',
-            'border-purple-700 hover:bg-lightPurple-700',
+            'color-bg-blue-1 hover:bg-lightPurple-700',
             'trans'
           )}
         >

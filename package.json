@@ -1,6 +1,6 @@
 {
   "name": "pooltogether-pool-ui",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "private": false,
   "scripts": {
     "reinstall": "rm -rf node_modules/ && yarn",

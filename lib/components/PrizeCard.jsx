@@ -11,7 +11,7 @@ import { useCoingeckoTokenData } from 'lib/hooks/useCoingeckoTokenData'
 import { useAwardsList } from 'lib/hooks/useAwardsList'
 import { usePoolChainValues } from 'lib/hooks/usePoolChainValues'
 
-import Sam from 'assets/images/Sam.svg'
+import Sam from 'assets/images/mithrilprize.jpg'
 
 export const PrizeCard = (props) => {
   const { showLinks, className } = props

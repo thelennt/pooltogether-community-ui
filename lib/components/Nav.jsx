@@ -5,8 +5,8 @@ import { ConnectWalletButton } from 'lib/components/ConnectWalletButton'
 import { WalletInfo } from 'lib/components/WalletInfo'
 import { useWalletNetwork } from 'lib/hooks/useWalletNetwork'
 
-import MithrilLogo from 'assets/images/mithril-logo.svg'
-import MithrilPLogo from 'assets/images/mithril-logo.svg'
+import MithrilLogo from 'assets/images/mithril-logo.png'
+import MithrilPLogo from 'assets/images/mithril-logo.png'
 
 export const Nav = (props) => {
   const { walletConnected } = useWalletNetwork()
