@@ -141,6 +141,7 @@ reach-portal {
 [data-reach-dialog-content] > div,
 [data-reach-dialog-content] > button {
   pointer-events: initial;
+  opacity: 0.5;
 }
 
 @screen sm {

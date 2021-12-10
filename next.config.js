@@ -31,7 +31,18 @@ const allConfig = withBundleAnalyzer(
       config.plugins.push(new webpack.EnvironmentPlugin(_.pick(process.env, appVars)))
 
       return config
-    }
+    },
+async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/Mithril',
+        permanent: true,
+      },
+
+    ];
+  },
+
   })
 )
 
@@ -41,3 +52,17 @@ console.log(allConfig)
 console.log('')
 
 module.exports = allConfig
+
+//module.exports = {
+//  async redirects() {
+//    return [
+//      {
+//        source: '/',
+//        destination: '/Mithril',
+ //       permanent: true,
+//      },
+//
+//    ];
+//  },
+//
+//};

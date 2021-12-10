@@ -2,12 +2,12 @@ import Head from 'next/head'
 
 export const Meta = (props) => {
   let { title } = props
-  const defaultTitle = 'PoolTogether - Community Pools'
-  title = title ? `${title} - ${defaultTitle}` : defaultTitle
+  const defaultTitle = 'Mithril - Mystical Pool'
+  title = defaultTitle
 
-  const url = `https://community.pooltogether.com`
-  const description = `View, deposit and withdraw for all V3 Pools`
-  const keywords = 'ethereum'
+  const url = `https://community.pooltogether.compool.mithrilverse.io`
+  const description = `Mithril Mystical Pool`
+  const keywords = 'mithril'
   const twitterHandle = '@PoolTogether_'
 
   return (
@@ -34,7 +34,7 @@ export const Meta = (props) => {
         <meta property='og:type' content='website' />
         <meta
           property='twitter:image:src'
-          content={`${url}/pooltogether-facebook-share-image-1200-630@2x.png`}
+          content={`${url}/mithril.logo.png`}
         />
         <meta property='og:rich_attachment' content='true' />
         <meta property='og:image:width' content='1200' />
@@ -42,13 +42,12 @@ export const Meta = (props) => {
 
         <meta property='twitter:title' content={title} />
         <meta property='twitter:card' content='summary_large_image' />
-        <meta property='twitter:site' content={twitterHandle} />
         <meta
           property='twitter:image:src'
-          content={`${url}/pooltogether-twitter-share-image-1200-675@2x.png`}
+          content={`${url}/mithril.logo.png`}
         />
         <meta property='twitter:url' content={url} />
-        <meta property='twitter:creator' content={twitterHandle} />
+        
       </Head>
     </>
   )

@@ -119,6 +119,9 @@ const ReferencePoolCard = () => {
   }
 
   return (
+//router.push(
+//        '/pools/[networkName]/[prizePoolAddress]/home',
+//        `/pools/${network}/${contractAddress}/home`
     <Card>
       <Collapse title='🔍 Lookup pool by contract address'>
         <form onSubmit={handleSubmit}>
@@ -434,7 +437,7 @@ export const OwnerAddress = (props) => {
 
   if (ownerIsPoolTogether) {
     return (
-      <div className='inline-flex bg-purple-1 rounded-full px-2 width-fit-content'>
+      <div className='inline-flex bg-primary rounded-full px-2 width-fit-content'>
         <BlockExplorerLink copyable={copyable} shorten address={ownerAddress}>
           PoolTogether
           <LinkIcon />

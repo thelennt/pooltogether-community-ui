@@ -14,7 +14,7 @@ module.exports = {
     },
     extend: {
       backgroundColor: {
-        'body': 'var(--color-bg-body)',
+		'body' :  'var(--color-bg-body)', 
         'card': 'var(--color-bg-card)',
         'card-selected': 'var(--color-bg-card-selected)',
         'primary': 'var(--color-bg-primary)',
@@ -44,6 +44,9 @@ module.exports = {
         'purple-1': 'var(--color-bg-purple-1)',
         'purple-2': 'var(--color-bg-purple-2)'
       },
+	  //backgroundImage: {
+     //   'body': 'var(--image-bg)'
+	 // },
       textColor: {
         'accent-1': 'var(--color-text-accent-1)',
         'accent-2': 'var(--color-text-accent-2)',
@@ -214,7 +217,7 @@ module.exports = {
       },
       backgroundOpacity: {
         '15': '0.15',
-        '80': '0.8'
+        '80': '0.8',
       },
       fill: (theme) => ({
         // 'indigo': theme('colors.indigo.500')
@@ -322,7 +325,7 @@ module.exports = {
     borderRadius: ['responsive'],
     opacity: ['hover', 'focus', 'responsive', 'disabled'],
     boxShadow: ['focus-within', 'focus', 'active'],
-    backgroundOpacity: ['hover', 'focus', 'active']
+    backgroundOpacity: ['hover', 'focus', 'active','dark']
   },
   plugins: [],
   purge: false

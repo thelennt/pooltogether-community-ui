@@ -8,9 +8,9 @@ export const Card = (props) => {
   const marginClasses = props.marginClasses || 'mb-4'
 
   return (
-    <div
+    <div 
       className={classnames(
-        'bg-default rounded-xl w-full fadeIn animated',
+        'bg-default rounded-xl opacity-80 w-full ',
         marginClasses,
         paddingClasses,
         className
@@ -31,9 +31,9 @@ export const CardDetailsList = (props) => (
 )
 
 export const InnerCard = (props) => (
-  <div
+  <div 
     className={classnames(
-      'mx-auto px-8 sm:px-12 py-4 bg-purple-800 bg-opacity-20 rounded-xl width-fit-content',
+      'mx-auto px-8 sm:px-12 py-4 bg-primary rounded-xl width-fit-content',
       props.className
     )}
   >
@@ -43,7 +43,7 @@ export const InnerCard = (props) => (
 
 export const CardTitle = (props) => (
   <div
-    className={classnames('font-bold text-base sm:text-2xl text-accent-1 flex', {
+    className={classnames('font-bold text-base sm:text-2xltext-accent-1 flex', {
       'mb-4': !props.noMargin
     })}
   >

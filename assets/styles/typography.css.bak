@@ -40,9 +40,7 @@ table {
 
 body {
   @apply font-sans-regular tracking-wide;
-  background-image: url('assets/images/pool.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url('assets/images/pool.jpg')
 }
 
 h1,

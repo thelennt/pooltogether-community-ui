@@ -21,7 +21,7 @@ export const PrizeCard = (props) => {
   if (!poolChainValuesIsFetched) return null
 
   return (
-    <Card className={classnames('flex flex-col mx-auto', className)}>
+    <Card className={classnames('flex flex-col mx-auto opacity-80', className)}>
       <PrizeSection />
       <NewPrizeCountdown center />
 
@@ -63,37 +63,20 @@ const PrizeSection = (props) => {
 
   if (loading) {
     return (
-      <div className={'p-10'}>
+      <div className={'op-10'}>
         <LoadingDots />
       </div>
     )
   }
 
-  if (awardsWithBalances.length === 0) {
     return (
       <>
         <CardSecondaryTitle className='text-center mb-2 font-bold'>
-          No prize data available at the moment
+          Drop your Mithril in the pool for a chance at a custom Mithrilverse NFT and 100+ Mithril.
+          Regain your Mithril (minus a 4% reflection input and 4% reflection withdraw) at any time. 
         </CardSecondaryTitle>
-        <CardSecondaryTitle className='text-center'>
-          We're growing new prizes worth winning for you.
-        </CardSecondaryTitle>
-        <CardSecondaryTitle className='text-center mb-8'>Check back on us soon!</CardSecondaryTitle>
-        <img
-          alt=''
-          src={Sam}
-          className='mx-auto w-12 h-12 sm:w-32 sm:h-32 mb-4 sm:mb-8'
-        />
-      </>
+        </>
     )
-  }
-
-  return (
-    <>
-      <Prizes awards={awardsWithBalances} />
-      <CardSecondaryTitle className='text-center mb-4 xs:mb-8'>Current Prize</CardSecondaryTitle>
-    </>
-  )
 }
 
 const Prizes = (props) => {
@@ -118,12 +101,12 @@ const SinglePrizeItem = (props) => {
   const imageUrl = tokenData?.image?.large
 
   return (
-    <div className={'flex mx-auto my-2 sm:mt-0 sm:mb-2 leading-none'}>
+    <div className={'opacity-80 flex mx-auto my-2 sm:mt-0 sm:mb-2 leading-none'}>
       {imageUrl && (
         <img src={imageUrl} className='w-8 h-8 sm:w-16 sm:h-16 mr-4 my-auto rounded-full' />
       )}
-      <span className='font-bold text-6xl sm:text-9xl mr-4 my-auto text-flashy'>
-        {token.formattedBalance}
+      <span className='font-bold text-6xl sm:text-9xl mr-4 my-auto'>
+        {token.formattedBalance} and a custom NFT
       </span>
       <span className='font-bolt text-sm sm:text-4xl mt-auto mb-2'>{token.symbol}</span>
     </div>
