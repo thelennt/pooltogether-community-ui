@@ -47,7 +47,6 @@ export const Meta = (props) => {
           content={`${url}/mithril-logo.png`}
         />
         
-        
       </Head>
     </>
   )
