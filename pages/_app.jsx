@@ -74,13 +74,13 @@ function MyApp({ Component, pageProps }) {
 }
 
 const InitPoolTogetherHooks = ({ children }) => {
-  useInitInfuraId(process.env.NEXT_JS_INFURA_ID)
+  useInitInfuraId('abaf2a7bc9d74252ade6c3ca4d488166')
   useInitReducedMotion(Boolean(process.env.NEXT_JS_REDUCE_MOTION))
-  useInitCookieOptions(process.env.NEXT_JS_DOMAIN_NAME)
+  useInitCookieOptions('pool.mithrilverse.io')
   useInitializeOnboard({
-    infuraId: process.env.NEXT_JS_INFURA_ID,
+    infuraId: 'abaf2a7bc9d74252ade6c3ca4d488166',
     fortmaticKey: process.env.NEXT_JS_FORTMATIC_API_KEY,
-    portisKey: process.env.NEXT_JS_PORTIS_API_KEY,
+    portisKey: '86e0cfa9-95b2-4eb5-86ed-ac9163ddbd6b',
     defaultNetworkName: 'homestead'
   })
   return children

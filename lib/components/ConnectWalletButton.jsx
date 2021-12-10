@@ -16,7 +16,7 @@ export const ConnectWalletButton = (props) => {
 
 ConnectWalletButton.defaultProps = {
   size: 'lg',
-  color: 'secondary',
+  color: 'primary',
   children: 'Connect Wallet',
   fullWidth: 'true'
 }

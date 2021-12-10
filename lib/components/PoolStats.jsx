@@ -24,8 +24,8 @@ import MithrilIcon from 'assets/images/mithrilicon.png'
 
 const PoolStatsCardLayout = (props) => {
   return (
-    <Card>
-      <div className='flex justify-between'>
+    <Card >
+      <div className='flex justify-between' >
         <CardTitle>Prize Pool Info</CardTitle>
       </div>
       <CardDetailsList>{props.children}</CardDetailsList>
@@ -55,9 +55,7 @@ const CompleteStatsList = () => {
       <NumberOfWinnersStat poolChainValues={poolChainValues} />
       <DepositsStat poolChainValues={poolChainValues} />
       <SponsorshipStat poolChainValues={poolChainValues} />
-      <YieldSourceStat poolChainValues={poolChainValues} />
       <DepositTokenStat poolChainValues={poolChainValues} />
-      <PoolOwnerStat poolChainValues={poolChainValues} />
       <Line />
       <ExitFeeStats poolChainValues={poolChainValues} />
       <ReserveStat poolChainValues={poolChainValues} />
@@ -82,9 +80,6 @@ const DepositorStatsList = () => {
       <NumberOfWinnersStat poolChainValues={poolChainValues} />
       <DepositsStat poolChainValues={poolChainValues} />
       <SponsorshipStat poolChainValues={poolChainValues} />
-      <YieldSourceStat poolChainValues={poolChainValues} />
-      <DepositTokenStat poolChainValues={poolChainValues} />
-      <PoolOwnerStat poolChainValues={poolChainValues} />
       <AprStats poolChainValues={poolChainValues} />
     </>
   )

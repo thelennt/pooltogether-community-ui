@@ -68,6 +68,7 @@
   --color-border-green-1: #3ef3d4;
   --color-border-green-2: #31b073;
   --color-border-transparent: rgba(0, 0, 0, 0);
+  //--image-bg: url('assets/images/pool.jpg');
 }
 
 .theme-light {
@@ -139,4 +140,5 @@
   --color-border-green-1: #1ef7d6;
   --color-border-green-2: #31b073;
   --color-border-transparent: rgba(0, 0, 0, 0);
+  
 }
