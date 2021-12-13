@@ -72,7 +72,7 @@ const PrizeSection = (props) => {
     return (
       <>
         <CardSecondaryTitle className='text-center mb-2 font-bold'>
-          Drop your Mithril in the pool for a chance at a custom Mithrilverse NFT and 100+ Mithril.
+          Drop your Mithril in the pool for a chance at a custom Mithrilverse NFT and 1000+ Mithril.
           Regain your Mithril (minus a 4% reflection input and 4% reflection withdraw) at any time. 
         </CardSecondaryTitle>
         </>

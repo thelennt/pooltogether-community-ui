@@ -16,7 +16,6 @@ export const Nav = (props) => {
       <div className='nav-and-footer-container'>
         <nav className='sm:px-8 lg:px-0 nav-min-height flex items-center h-full justify-between flex-wrap'>
           <div className='w-2/5 lg:w-1/5 justify-start h-full flex items-center truncate'>
-            <Link href='/' as='/'>
               <a title={'Back to home'} className='border-0'>
                 <img
                   alt={`Mithril Logo`}
@@ -28,8 +27,7 @@ export const Nav = (props) => {
                   src={MithrilPLogo}
                   className='mr-auto lg:m-0 w-6 block sm:hidden'
                 />
-              </a>
-            </Link>
+              </a>yarn dev
           </div>
 
           <div className='w-1/5 lg:w-3/5 flex justify-center h-full text-center lg:text-right'>

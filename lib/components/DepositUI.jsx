@@ -57,7 +57,7 @@ export const DepositUI = () => {
           {tokenSymbol} <LinkIcon />
         </BlockExplorerLink>
       </span>{' '}
-      to be eligible to win the prizes in this pool. Once deposited you will receive {ticketSymbol}{' '}
+      to be eligible to win the prizes in this pool. Once deposited you will receive Mystical Mithril Pool Artifacts ({ticketSymbol}{' '})
       and be entered to win until your {tokenSymbol} is withdrawn.
     </>
   )
